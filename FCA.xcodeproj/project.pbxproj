@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C428D565163EC2B900186385 /* ShaderDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C428D564163EC2B900186385 /* ShaderDemo.cpp */; };
+		C428D576163ED54800186385 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C428D575163ED54800186385 /* Foundation.framework */; };
+		C428D578163ED56F00186385 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C428D577163ED56F00186385 /* AppKit.framework */; };
+		C428D582163EE09800186385 /* lattice.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = C428D57E163ED93900186385 /* lattice.vert */; };
+		C428D583163EE09800186385 /* lattice.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = C428D57D163ED93900186385 /* lattice.frag */; };
+		C48F7C0A19FBE73D00E2ACFD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48F7C0919FBE73D00E2ACFD /* OpenGL.framework */; };
+		C48F7C0C19FBE75500E2ACFD /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C48F7C0B19FBE75500E2ACFD /* GLUT.framework */; };
+		C48F7C1119FBEA9500E2ACFD /* PolyModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C48F7C1019FBEA9500E2ACFD /* PolyModel.cpp */; };
+		FDE2C0E71A1665A300F4C3D6 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDE2C0E61A1665A300F4C3D6 /* Tile.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				C428D582163EE09800186385 /* lattice.vert in CopyFiles */,
+				C428D583163EE09800186385 /* lattice.frag in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8DD76FB20486AB0100D96B5E /* ShaderIntro */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShaderIntro; sourceTree = BUILT_PRODUCTS_DIR; };
+		C428D564163EC2B900186385 /* ShaderDemo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderDemo.cpp; sourceTree = "<group>"; };
+		C428D575163ED54800186385 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = ../../../../../../../System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
+		C428D577163ED56F00186385 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../../../../../../../System/Library/Frameworks/AppKit.framework; sourceTree = "<group>"; };
+		C428D57D163ED93900186385 /* lattice.frag */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = lattice.frag; path = resources/lattice.frag; sourceTree = "<group>"; };
+		C428D57E163ED93900186385 /* lattice.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = lattice.vert; path = resources/lattice.vert; sourceTree = "<group>"; };
+		C48F7C0919FBE73D00E2ACFD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		C48F7C0B19FBE75500E2ACFD /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		C48F7C0D19FBEA9500E2ACFD /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec3.h; sourceTree = "<group>"; };
+		C48F7C0E19FBEA9500E2ACFD /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		C48F7C0F19FBEA9500E2ACFD /* PolyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolyModel.h; sourceTree = "<group>"; };
+		C48F7C1019FBEA9500E2ACFD /* PolyModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PolyModel.cpp; sourceTree = "<group>"; };
+		FD52BE931A33AE1500EC3353 /* mand.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = mand.frag; path = resources/mand.frag; sourceTree = "<group>"; };
+		FD52BE941A33AE1500EC3353 /* mand.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = mand.vert; path = resources/mand.vert; sourceTree = "<group>"; };
+		FD52BE951A34B5A400EC3353 /* bumpp.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = bumpp.frag; path = resources/bumpp.frag; sourceTree = "<group>"; };
+		FD52BE961A34B5A400EC3353 /* bumpp.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = bumpp.vert; path = resources/bumpp.vert; sourceTree = "<group>"; };
+		FDE2C0E61A1665A300F4C3D6 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		FDE2C0E81A16FF1300F4C3D6 /* blue.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = blue.vert; path = resources/blue.vert; sourceTree = "<group>"; };
+		FDE2C0E91A16FF1300F4C3D6 /* green.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = green.vert; path = resources/green.vert; sourceTree = "<group>"; };
+		FDE2C0EA1A16FF1300F4C3D6 /* red.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = red.vert; path = resources/red.vert; sourceTree = "<group>"; };
+		FDE2C0EB1A16FF1300F4C3D6 /* yellow.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = yellow.vert; path = resources/yellow.vert; sourceTree = "<group>"; };
+		FDE2C0EC1A16FF1300F4C3D6 /* blue.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = blue.frag; path = resources/blue.frag; sourceTree = "<group>"; };
+		FDE2C0ED1A16FF1300F4C3D6 /* green.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = green.frag; path = resources/green.frag; sourceTree = "<group>"; };
+		FDE2C0EE1A16FF1300F4C3D6 /* red.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = red.frag; path = resources/red.frag; sourceTree = "<group>"; };
+		FDE2C0EF1A16FF1300F4C3D6 /* yellow.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = yellow.frag; path = resources/yellow.frag; sourceTree = "<group>"; };
+		FDF565201A32103100A772D4 /* phong.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.frag; path = resources/phong.frag; sourceTree = "<group>"; };
+		FDF565211A32103100A772D4 /* phong.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = phong.vert; path = resources/phong.vert; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C428D576163ED54800186385 /* Foundation.framework in Frameworks */,
+				C48F7C0A19FBE73D00E2ACFD /* OpenGL.framework in Frameworks */,
+				C48F7C0C19FBE75500E2ACFD /* GLUT.framework in Frameworks */,
+				C428D578163ED56F00186385 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ShaderIntro */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C428D581163ED94300186385 /* Shaders */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				C428D574163ED50300186385 /* Frameworks */,
+			);
+			name = ShaderIntro;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C48F7C0D19FBEA9500E2ACFD /* Vec3.h */,
+				C48F7C0E19FBEA9500E2ACFD /* util.h */,
+				C48F7C0F19FBEA9500E2ACFD /* PolyModel.h */,
+				FDE2C0E61A1665A300F4C3D6 /* Tile.cpp */,
+				C48F7C1019FBEA9500E2ACFD /* PolyModel.cpp */,
+				C428D564163EC2B900186385 /* ShaderDemo.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76FB20486AB0100D96B5E /* ShaderIntro */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C428D574163ED50300186385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C48F7C0B19FBE75500E2ACFD /* GLUT.framework */,
+				C48F7C0919FBE73D00E2ACFD /* OpenGL.framework */,
+				C428D577163ED56F00186385 /* AppKit.framework */,
+				C428D575163ED54800186385 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C428D581163ED94300186385 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C428D57E163ED93900186385 /* lattice.vert */,
+				FDF565201A32103100A772D4 /* phong.frag */,
+				FD52BE931A33AE1500EC3353 /* mand.frag */,
+				FD52BE941A33AE1500EC3353 /* mand.vert */,
+				FD52BE951A34B5A400EC3353 /* bumpp.frag */,
+				FD52BE961A34B5A400EC3353 /* bumpp.vert */,
+				FDF565211A32103100A772D4 /* phong.vert */,
+				C428D57D163ED93900186385 /* lattice.frag */,
+				FDE2C0E81A16FF1300F4C3D6 /* blue.vert */,
+				FDE2C0E91A16FF1300F4C3D6 /* green.vert */,
+				FDE2C0EA1A16FF1300F4C3D6 /* red.vert */,
+				FDE2C0EB1A16FF1300F4C3D6 /* yellow.vert */,
+				FDE2C0EC1A16FF1300F4C3D6 /* blue.frag */,
+				FDE2C0ED1A16FF1300F4C3D6 /* green.frag */,
+				FDE2C0EE1A16FF1300F4C3D6 /* red.frag */,
+				FDE2C0EF1A16FF1300F4C3D6 /* yellow.frag */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* ShaderIntro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "ShaderIntro" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderIntro;
+			productInstallPath = "$(HOME)/bin";
+			productName = ShaderIntro;
+			productReference = 8DD76FB20486AB0100D96B5E /* ShaderIntro */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "FCA" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ShaderIntro */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* ShaderIntro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE2C0E71A1665A300F4C3D6 /* Tile.cpp in Sources */,
+				C428D565163EC2B900186385 /* ShaderDemo.cpp in Sources */,
+				C48F7C1119FBEA9500E2ACFD /* PolyModel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ADDITIONAL_SDKS[arch=*]" = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"",
+					"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ShaderIntro;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Versions/A/Frameworks\"",
+					"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ShaderIntro;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "ShaderIntro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "FCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
